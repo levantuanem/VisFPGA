@@ -1,0 +1,139 @@
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+env/
+ENV/
+
+*.egg-info/
+dist/
+build/
+
+# ==============================
+# Jupyter
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Datasets
+# ==============================
+
+data/raw/*
+data/processed/*
+data/calibration/*
+data/splits/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/calibration/.gitkeep
+!data/splits/.gitkeep
+
+# ==============================
+# ML Models / Checkpoints
+# ==============================
+
+models/checkpoints/*
+models/onnx/*
+models/tensorrt/*
+models/quantized/*
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.engine
+*.plan
+*.safetensors
+*.bin
+
+# ==============================
+# Experiment Outputs
+# ==============================
+
+results/raw/*
+results/logs/*
+
+# ==============================
+# Benchmark Outputs
+# ==============================
+
+benchmarks/*
+
+# ==============================
+# FPGA / Vivado / Vitis
+# ==============================
+
+fpga/**/.Xil/
+fpga/**/.cache/
+fpga/**/.gen/
+fpga/**/.ip_user_files/
+fpga/**/.runs/
+fpga/**/.srcs/
+fpga/**/.hw/
+fpga/**/.sim/
+fpga/**/.sdk/
+fpga/**/.vitis/
+fpga/**/vivado*.log
+fpga/**/vivado*.jou
+fpga/**/*.xpr
+fpga/**/*.runs/
+fpga/**/*.cache/
+fpga/**/*.gen/
+fpga/**/*.hw/
+fpga/**/*.sim/
+
+# FPGA generated binaries
+*.bit
+*.bin
+*.ltx
+*.xsa
+*.dcp
+
+# ==============================
+# AWS FPGA
+# ==============================
+
+fpga/**/afi/*
+fpga/**/build/
+fpga/**/output/
+
+# ==============================
+# OS
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# VS Code
+# ==============================
+
+.vscode/
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
