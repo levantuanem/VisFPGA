@@ -1,0 +1,15 @@
+Dataset:
+    VisDrone2019-DET
+
+Train:
+    training set
+
+Validation:
+    validation set
+
+Test:
+    test-dev
+
+Calibration:
+    lấy từ training set
+    không lấy test set

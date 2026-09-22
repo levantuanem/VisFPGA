@@ -1,0 +1,21 @@
+# requirements.txt — core deps, CPU-safe (works on Windows ARM / no GPU).
+# Install this locally for VSCode dev: writing/testing scripts, dataset prep,
+# reading results, generating report figures. Training/PTQ/QAT still need to
+# run where there's an NVIDIA GPU (Colab, rented server) — see
+# requirements-colab.txt for the extra packages needed there.
+
+ultralytics>=8.2,<9
+torch>=2.2
+torchvision>=0.17
+
+numpy<2
+opencv-python-headless>=4.9
+Pillow>=10.0
+PyYAML>=6.0
+pandas>=2.2
+matplotlib>=3.8
+
+onnx>=1.16
+onnxsim>=0.4
+
+tqdm>=4.66

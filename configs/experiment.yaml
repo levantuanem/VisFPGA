@@ -1,0 +1,7 @@
+M0_FP32
+    ↓
+M1_PTQ_INT8
+    ↓
+M2_QAT
+    ↓
+M3_Hardware_Aware

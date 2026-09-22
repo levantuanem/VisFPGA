@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visfpga"
+version = "0.1.0"
+description = "Hardware-aware quantization of object detection models for UAV imagery on AWS EC2 F1/F2 FPGAs (Edge AI Design Challenge 2026, HCMUTE)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+# Dependency versions are pinned in requirements.txt / requirements-colab.txt
+# (kept separate so the CPU-only local env and the GPU Colab env can install
+# independently). This section intentionally left without a hard dependency
+# list to avoid maintaining versions in two places.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
