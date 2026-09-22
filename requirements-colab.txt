@@ -1,0 +1,13 @@
+# requirements-colab.txt — GPU-only extras for E2 (PTQ) and E3 (QAT).
+# Install ON TOP OF requirements.txt, only on a runtime with an NVIDIA GPU
+# (Colab GPU runtime, a rented GPU server). These will fail to install or
+# be useless on the local Windows-ARM CPU-only machine — do not add these
+# to the base requirements.txt.
+#
+# Usage on a fresh Colab cell:
+#   !pip install -q -r requirements.txt -r requirements-colab.txt
+
+-r requirements.txt
+
+tensorrt>=10.0
+brevitas>=0.11
